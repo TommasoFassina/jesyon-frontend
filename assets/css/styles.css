@@ -1,0 +1,22 @@
+.navbar.navbar-light.navbar-expand-md {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 61px;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.navbar-light .navbar-brand {
+  position: fixed;
+  padding: 0px;
+  padding-top: 0px;
+  width: 80px;
+  margin: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
