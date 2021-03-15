@@ -24,3 +24,8 @@ html,
 body {
   height: 100% !important;
 }
+
+.btn-primary {
+  background-color: #3282b8;
+  border-color: #3282b8;
+}
