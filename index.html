@@ -9,15 +9,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
+     <!-- Bootstrap CSS CDN -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+     <!-- Our Custom CSS -->
+     <link rel="stylesheet" href="assets/css/styles.css">
+     <!-- Scrollbar Custom CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        
+     <!-- Font Awesome JS -->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
+
 
 <body style="background: #0f4c75;overflow-x: hidden;">
 
-
-    <!-- NAVBAR -->
+    <!-- NAVBAR Vecchia 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: #1b262c;color: rgb(255,255,255);">
         <div class="container-fluid">
             <div class="collapse navbar-collapse " id="navcol-1"><img src="assets/img/menu.png"
@@ -27,113 +41,212 @@
             </div>
         </div>
     </nav>
-    <!-- NAVBAR -->
+    NAVBAR -->
+
+    <!-- SIDEBAR -->
+    
+    <div class="wrapper">
+        
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbarDark" style="background: #1b262c;color: rgb(255,255,255);">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        
+                        <img src="assets/img/menu.png"
+                    style="width: 32px;height: 32px;">
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
 
-    <!-- Page TITLE -->
-    <div class="row align-items-center justify-content-center" style="margin-top: 100px;">
-        <p style="font-size: 32px;color: #bbe1fa;">Users activities</p>
-    </div>
-    <!-- Page TITLE -->
+            <!-- Page TITLE -->
+                <div class="row align-items-center justify-content-center" style="margin-top: 100px;">
+                    <p style="font-size: 32px;color: #bbe1fa;">Users activities</p>
+                 </div>
+             <!-- Page TITLE -->
 
 
-    <!-- CARD -->
-    <div class="row align-items-center justify-content-center" style="padding-top: 20px;margin-top: 0px;">
-        <div class="card" style="border-radius: 31;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin-bottom: 0px;margin-top: 180px;
-            width: 650px;background: #3282b8;height: 200px;position: absolute;">
-            <div class="card-body d-flex flex-column" style="height: 262px;">
-                <div>
-                    <div class="row">
+            <!-- CARD -->
+            <div class="row align-items-center justify-content-center" style="padding-top: 20px;margin-top: 0px;">
+                <div class="card" style="border-radius: 31;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;
+                    border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin-bottom: 0px;margin-top: 180px;
+                    width: 650px;background: #3282b8;height: 200px;position: absolute;">
+                    <div class="card-body d-flex flex-column" style="height: 262px;">
+                        <div>
+                            <div class="row">
 
-                        <div class="col" style="width: 60px;max-width: 60px;" data-toggle="popover" title="Details"
-                            data-content="Tommaso Fassina 15/03/2021"><img src="assets/img/lock.png"
-                                style="width: 32px;height: 32px;">
-                        </div>
-                        <div class="col" style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
-                            <h4
-                                style="font-family: 'Source Sans Pro', sans-serif;font-weight: 700;color: #bbe1fa;margin-top: 5px;">
-                                Allenamento
-                            </h4>
-                        </div>
-
-                        <div class="col-xl-1 offset-xl-4"
-                            style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
-                            <div class="container">
-                                <div class="rounded-circle" style="background: #000000;height: 50px;width: 50px;">
+                                <div class="col" style="width: 60px;max-width: 60px;" data-toggle="popover" title="Details"
+                                    data-content="Tommaso Fassina 15/03/2021"><img src="assets/img/lock.png"
+                                        style="width: 32px;height: 32px;">
                                 </div>
+                                <div class="col" style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
+                                    <h4
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: 700;color: #bbe1fa;margin-top: 5px;">
+                                        Allenamento
+                                    </h4>
+                                </div>
+
+                                <div class="col-xl-1 offset-xl-4"
+                                    style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
+                                    <div class="container">
+                                        <div class="rounded-circle" style="background: #000000;height: 50px;width: 50px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p
+                                style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;margin-top: 16px;margin-right: 0px;">
+                                Sessione di allenamento all'aperto</p>
+                        </div>
+                        <div class="row" style="margin-bottom: 0px;padding-top: 25px;margin-left: 0px;">
+                            <div class="col">
+                                <p
+                                    style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;margin-bottom: 0px;">
+                                    3 H 20 m</p>
+                            </div>
+                            <div class="col-xl-3 offset-xl-5">
+                                <p style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;font-weight: bold;
+                                    text-align: center;font-style: oblique;margin-bottom: 0px;">
+                                    SPORT</p>
                             </div>
                         </div>
                     </div>
-                    <p
-                        style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;margin-top: 16px;margin-right: 0px;">
-                        Sessione di allenamento all'aperto</p>
-                </div>
-                <div class="row" style="margin-bottom: 0px;padding-top: 25px;margin-left: 0px;">
-                    <div class="col">
-                        <p
-                            style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;margin-bottom: 0px;">
-                            3 H 20 m</p>
-                    </div>
-                    <div class="col-xl-3 offset-xl-5">
-                        <p style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;font-weight: bold;
-                            text-align: center;font-style: oblique;margin-bottom: 0px;">
-                            SPORT</p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- CARD -->
+            <!-- CARD -->
 
 
-    <!-- CARD -->
-    <div class="row align-items-center justify-content-center" style="margin-top: 250px;">
-        <div class="card" style="border-radius: 31;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin-bottom: 0px;margin-top: 150px;width: 650px;
-            background: #3282b8;height: 200px;position: absolute;">
-            <div class="card-body d-flex flex-column" style="height: 262px;">
-                <div>
-                    <div class="row">
-                        <div class="col" style="width: 60px;max-width: 60px;" data-toggle="popover" title="Details"
-                            data-content="Tommaso Fassina 10/03/2021"><img src="assets/img/lock.png"
-                                style="width: 32px;height: 32px;">
-                        </div>
-                        <div class="col" style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
-                            <h4
-                                style="font-family: 'Source Sans Pro', sans-serif;font-weight: 700;color: #bbe1fa;margin-top: 5px;">
-                                Allenamento</h4>
-                        </div>
-                        <div class="col-xl-1 offset-xl-4"
-                            style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
-                            <div class="container">
-                                <div class="rounded-circle" style="background: #000000;height: 50px;width: 50px;">
+            <!-- CARD -->
+            <div class="row align-items-center justify-content-center" style="margin-top: 250px;">
+                <div class="card" style="border-radius: 31;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;
+                    border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin-bottom: 0px;margin-top: 150px;width: 650px;
+                    background: #3282b8;height: 200px;position: absolute;">
+                    <div class="card-body d-flex flex-column" style="height: 262px;">
+                        <div>
+                            <div class="row">
+                                <div class="col" style="width: 60px;max-width: 60px;" data-toggle="popover" title="Details"
+                                    data-content="Tommaso Fassina 10/03/2021"><img src="assets/img/lock.png"
+                                        style="width: 32px;height: 32px;">
                                 </div>
+                                <div class="col" style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
+                                    <h4
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: 700;color: #bbe1fa;margin-top: 5px;">
+                                        Allenamento</h4>
+                                </div>
+                                <div class="col-xl-1 offset-xl-4"
+                                    style="width: 100px;padding-left: 0px;padding-right: 0px;max-width: 300px;">
+                                    <div class="container">
+                                        <div class="rounded-circle" style="background: #000000;height: 50px;width: 50px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;margin-top: 16px;">Sessione
+                                di
+                                allenamento all'aperto</p>
+                        </div>
+                        <div class="row" style="margin-bottom: 0px;padding-top: 25px;margin-left: 0px;">
+                            <div class="col">
+                                <p
+                                    style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;margin-bottom: 0px;">
+                                    3 H 20 m</p>
+                            </div>
+                            <div class="col-xl-3 offset-xl-5">
+                                <p style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;font-weight: bold;text-align: center;
+                                    font-style: oblique;margin-bottom: 0px;">
+                                    SPORT</p>
                             </div>
                         </div>
                     </div>
-                    <p style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;margin-top: 16px;">Sessione
-                        di
-                        allenamento all'aperto</p>
-                </div>
-                <div class="row" style="margin-bottom: 0px;padding-top: 25px;margin-left: 0px;">
-                    <div class="col">
-                        <p
-                            style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;margin-bottom: 0px;">
-                            3 H 20 m</p>
-                    </div>
-                    <div class="col-xl-3 offset-xl-5">
-                        <p style="font-family: 'Source Sans Pro', sans-serif;color: #1b262c;width: 150px;font-weight: bold;text-align: center;
-                            font-style: oblique;margin-bottom: 0px;">
-                            SPORT</p>
-                    </div>
                 </div>
             </div>
+            <!-- CARD -->
+
         </div>
+        
     </div>
-    <!-- CARD -->
-
-
+    <div class="overlay"></div>
 </body>
 
 
