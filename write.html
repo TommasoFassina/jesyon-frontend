@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/jquery.min.js"></script>
-
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+    <!-- Script js -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
@@ -54,18 +56,19 @@
 
                 <!-- Descrizione -->
                 <div class="form-group">
-                    <label for=" exampleFormControlTextarea1">Descrizione</label>
+                    <label for=" exampleFormControlTextarea1" style="color: #1b262c;">Descrizione</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <!-- Descrizione -->
 
 
-                <div class="row" style="margin-left: 0px; margin-top: 10px;">
+                <div class="row" style="margin-left: 0px; margin-top: 20px;">
 
                     <!-- Categoria -->
                     <div class="input-group mb-3" style=" max-width: 250px; margin-right: 200px;">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Categoria</span>
+                            <span class="input-group-text" id="basic-addon1"
+                                style="background-color: #bbe1fa;color: #1b262c !important;">Categoria</span>
                         </div>
                         <input type="text" style="text-align: center;" class="form-control" placeholder="Categoria"
                             aria-label="Categoria" aria-describedby="basic-addon1">
@@ -78,7 +81,8 @@
                         <input type="number" min="00" max="24" class="form-control" style="text-align: center;"
                             placeholder="Ore" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">HH</span>
+                            <span class="input-group-text" style="background-color: #bbe1fa; color: #1b262c !important;"
+                                id="basic-addon2">HH</span>
                         </div>
                     </div>
 
@@ -86,7 +90,8 @@
                         <input type="number" min="00" max="59" class="form-control" style="text-align: center;"
                             placeholder="Minuti" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">mm</span>
+                            <span class="input-group-text" style="background-color: #bbe1fa; color: #1b262c !important;"
+                                id="basic-addon2">mm</span>
                         </div>
                     </div>
                 </div>
@@ -96,9 +101,13 @@
                 <!-- Data e visibilità -->
                 <div class="row" style="margin-top: 40px;">
                     <div class="form-check form-check-inline" style="margin-left: 20px;">
-                        <div id="datee" style="margin-right: 590px;"></div>
+                        <div id="datee" style="margin-right: 590px; color: #1b262c !important;">
+                            <script>
+                                data();
+                            </script>
+                        </div>
                         <label class="form-check-label" for="inlineCheckbox1"
-                            style="padding-right: 10px;">Pubblico</label>
+                            style="padding-right: 10px; color: #1b262c !important;">Pubblico</label>
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                     </div>
                 </div>
@@ -134,9 +143,7 @@
 <!-- FOOTER -->
 
 
-<!-- Script js -->
-<script src="assets/js/script.js"></script>
-<!-- Script js -->
+
 
 
 </html>
