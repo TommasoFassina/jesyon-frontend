@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
@@ -40,10 +40,57 @@
     <div class="row align-items-center justify-content-center" style="padding-top: 20px;margin-top: 0px;">
         <div class="card" style="border-radius: 31;border-top-left-radius: 20px;border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin-bottom: 0px;
-            margin-top: 400px;width: 800px;background: #3282b8;height: 400px;position: absolute;">
+            margin-top: 400px;width: 800px;background: #3282b8;height: 420px;position: absolute;">
             <div class="card-body d-flex flex-column" style="height: 262px;">
 
-                Zona dove inserire tutti gli elementi necessari per la creazione dei post
+                <div class="form-group">
+                    <input type="email" class="form-control" style="text-align: center;" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Inserisci il titolo della tua attività">
+                </div>
+
+                <div class="form-group">
+                    <label for=" exampleFormControlTextarea1">Descrizione</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+
+                <div class="row" style="margin-left: 0px; margin-top: 10px;">
+
+                    <div class="input-group mb-3" style=" max-width: 250px; margin-right: 200px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Categoria</span>
+                        </div>
+                        <input type="text" style="text-align: center;" class="form-control" placeholder="Categoria"
+                            aria-label="Categoria" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3" style=" max-width: 140px; margin-right: 29px;">
+                        <input type="number" min="00" max="24" class="form-control" style="text-align: center;"
+                            placeholder="Ore" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">HH</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3" style="max-width: 140px">
+                        <input type="number" min="00" max="59" class="form-control" style="text-align: center;"
+                            placeholder="Minuti" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 40px;">
+                    <div class="form-check form-check-inline" style="margin-left: 20px;">
+                        <div id="datee" style="margin-right: 590px;"></div>
+                        <label class="form-check-label" for="inlineCheckbox1"
+                            style="padding-right: 10px;">Pubblico</label>
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                </div>
+
+
+
 
             </div>
         </div>
@@ -72,6 +119,11 @@
     </div>
 </footer>
 <!-- FOOTER -->
+
+
+<!-- Script js -->
+<script src="assets/js/script.js"></script>
+<!-- Script js -->
 
 
 </html>
