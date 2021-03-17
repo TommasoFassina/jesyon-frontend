@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    
+    
     $('#dismiss, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');
@@ -6,6 +8,7 @@ $(document).ready(function () {
         $('#navbarDark').show();
     });
 
+   
     $('#sidebarCollapse').on('click', function () {
         $('.footer').hide();
         $('#navbarDark').hide();
@@ -13,8 +16,5 @@ $(document).ready(function () {
         $('.overlay').addClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-    });
-    $("#sidebar").mCustomScrollbar({
-    theme: "minimal"
     });
 });

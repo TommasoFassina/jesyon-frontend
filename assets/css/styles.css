@@ -88,6 +88,10 @@ textarea {
   opacity: 1;
 }
 
+#sidebar{
+  overflow: hidden;
+}
+
 #sidebar .sidebar-header {
   padding: 20px;
   background-color: #3282b8;
@@ -95,7 +99,6 @@ textarea {
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul p {
@@ -135,7 +138,7 @@ a[data-toggle="collapse"] {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #3282b8;
+  background: #1b262c;;
 }
 
 ul.CTAs {
@@ -159,6 +162,13 @@ a.article,
 a.article:hover {
   background: #3282b8 !important;
   color: #fff !important;
+}
+
+.link-disabled{
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 /* ---------------------------------------------------
