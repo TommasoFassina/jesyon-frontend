@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Jesyon sito</title>
+    <title>Jesyon - Nuova attività</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
@@ -45,30 +45,25 @@
             <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
-
             <div class="sidebar-header">
                 <h3>Jesyon</h3>
             </div>
-
             <ul class="list-unstyled components">
                 <p>User Name</p>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="text-decoration-none">Home</a>
                 </li>
                 <li class="active">
-                    <a href="editProfile.html">Profile</a>
+                    <a href="editProfile.html" class="text-decoration-none">Profile</a>
                 </li>
             </ul>
         </nav>
-
         <!-- Page Content  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbarDark"
                 style="background: #1b262c;color: rgb(255,255,255);">
                 <div class="container-fluid" style="padding-left: 2px;">
-
                     <button type="button" id="sidebarCollapse" class="btn">
-
                         <img src="assets/img/menu.png" style="width: 32px;height: 32px;">
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
@@ -76,12 +71,10 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="editProfile.html">{User}</a>
-
+                                <a class="nav-link" href="editProfile.html" style="color: #bbe1fa">{User}</a>
                             </li>
                             <div class="rounded-circle" style="background: #000000;height: 43px;width: 43px;">
                             </div>
@@ -89,22 +82,17 @@
                     </div>
                 </div>
             </nav>
-
             <!-- Page TITLE -->
             <div class="row align-items-center justify-content-center" style="margin-top: 100px;">
-
                 <p style="font-size: 32px;color: #bbe1fa;">{Users} activities</p>
             </div>
             <!-- Page TITLE -->
-
             <!-- CARD -->
             <div class="row align-items-center justify-content-center" style="padding-top: 50px;margin-top: 0px;">
                 <div class="card" style="border-radius: 31;border-top-left-radius: 20px;border-top-right-radius: 20px;
                     border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin-bottom: 0px;
                         margin-top: 400px;width: 800px;background: #3282b8;height: 420px;position: absolute;">
                     <div class="card-body d-flex flex-column" style="height: 262px;">
-
-
                         <!-- Titolo -->
                         <div class="form-group">
                             <input type="text" class="form-control"
@@ -112,19 +100,14 @@
                                 aria-describedby="titolo" placeholder="Inserisci il titolo della tua attività">
                         </div>
                         <!-- Titolo -->
-
-
                         <!-- Descrizione -->
-                        <div class="form-group">
-                            <label for=" exampleFormControlTextarea1" style="color: #1b262c;">Descrizione</label>
+                        <div class="form-group font-weight-bold">
+                            <label for=" exampleFormControlTextarea1" style="color: #bbe1fa;">Descrizione</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
                                 style="background-color: #bbe1fa;"></textarea>
                         </div>
                         <!-- Descrizione -->
-
-
                         <div class="row" style="margin-left: 0px; margin-top: 20px;">
-
                             <!-- Categoria -->
                             <div class="input-group mb-3" style=" max-width: 250px; margin-right: 200px;">
                                 <div class="input-group-prepend">
@@ -137,8 +120,6 @@
                                     aria-describedby="basic-addon1">
                             </div>
                             <!-- Categoria -->
-
-
                             <!-- Inserimento del tempo -->
                             <div class="input-group mb-3" style=" max-width: 140px; margin-right: 29px;">
                                 <input type="number" min="00" max="24" class="form-control"
@@ -150,7 +131,6 @@
                                         id="basic-addon2">HH</span>
                                 </div>
                             </div>
-
                             <div class="input-group mb-3" style="max-width: 140px">
                                 <input type="number" min="00" max="59" class="form-control"
                                     style="text-align: center;background-color: #bbe1fa;border-right: 1px solid #0f4c75"
@@ -164,36 +144,28 @@
                             </div>
                         </div>
                         <!-- Inserimento del tempo -->
-
-
                         <!-- Data e visibilità -->
                         <div class="row" style="margin-top: 40px;">
-                            <div class="form-check form-check-inline" style="margin-left: 20px;">
-                                <div id="datee" style="margin-right: 590px; color: #1b262c !important;">
+                            <div class="form-check form-check-inline font-weight-bold" style="margin-left: 20px;">
+                                <div id="datee" style="margin-right: 590px; color: #bbe1fa !important;">
                                     <script>
                                         data();
                                     </script>
                                 </div>
                                 <label class="form-check-label" for="inlineCheckbox1"
-                                    style="padding-right: 10px; color: #1b262c !important;">Privato</label>
+                                    style="padding-right: 10px; color: #bbe1fa !important;">Privato</label>
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                             </div>
                         </div>
                         <!-- Data e visibilità -->
-
-
                     </div>
                 </div>
             </div>
             <!-- CARD -->
-
         </div>
-
     </div>
     <div class="overlay"></div>
-
 </body>
-
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -213,9 +185,5 @@
     </div>
 </footer>
 <!-- FOOTER -->
-
-
-
-
 
 </html>
